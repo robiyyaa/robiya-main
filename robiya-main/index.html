@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+ <meta http-equiv="X-UA-Comatible" content ="ie=edge">
+ <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+ <title>Koktem</title>
+ <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Koktem</span>
+
+    </div>
+    <div id="about">
+
+      <a href="#" title="Меню" onclick="slowScroll('#main')">О нас</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Меню">Меню</a>
+      <a href="#" onclick="slowScroll('#delivery')" title="Доставка">Доставка</a>
+
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Место, где живет Весна</h1>
+
+    </div>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <hr>
+      <h2>Кафе «Коктем» - место для теплых встреч и долгих разговоров.</h2>
+      <hr>
+    </div>
+
+
+    <div class="text">
+      <span>
+  Концепция кухни: веганская - насыщенная, пряная - индийская кухня.
+Также есть европейская, локальная, и паназиатская кухни, street food зона. Мы готовим большой выбор авторских лимонадов, делаем домашние напитки. А также в меню представлен легкий алкоголь: разливной сидр и алкогольные коктейли.
+  </span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <a href="https://kerupie.github.io/Menu/"><h2>Меню</h2></a><br>
+    <a href="desserts.html"><h2>Десерты</h2></a><br>
+    <!-- <a href="beverages.html"><h2>Напитки</h2></a><br> -->
+    <br><br><br><br><br>
+
+    <!-- <h3>Новинки и круглосуточная доставка.</h3> -->
+
+
+  <div id="delivery">
+    <h2>Доставка</h2><br><br>
+      <p>Cвой заказ можно получить круглосуточно 24\7 по адресу: г. Нур-Султан, ул.Д. Кунаева 12/1.</p>
+      <p>После получения смс уведомления, доставка осуществляться в течении 1 часа. Стоимость доставки 500 тенге, при заказе свыше 5000 тенге доставка бесплатная.</p>
+    <br><br><br><br>
+   <h2>Контакты</h2><br>
+     <p>+7 7172 68 9999<br>
+     +7 701 068 9993<br>
+     +7 701 111 4966</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+      $("header").removeClass("fixed");
+      else {
+        $("header").attr("class", "fixed");
+      }
+    });
+  </script>
+  </body>
+  </html>
