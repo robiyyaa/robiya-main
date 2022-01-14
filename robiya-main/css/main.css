@@ -195,13 +195,22 @@ a:-webkit-any-link {
   text-align: center;
 }
 
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 1.7em;
+  letter-spacing: 1.1px;
+
+  margin-top: 3em;
+}
 
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto Slab', serif;
   font-weight: lighter;
 }
 
-#delivery p {font-size: 3em; color: #73755d}
+#delivery p {font-size: 1.5em; color: #73755d}
 
 #form_input {
   margin-top: 15px;
