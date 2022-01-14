@@ -74,7 +74,7 @@ header #logo span {
   background-color: #fff;
   border-bottom: 1px solid silver;
 }
-header.fixed #loop {
+header.fixed #logo {
   color: #343434;
 }
 .fixed #about a {color: #343434}
