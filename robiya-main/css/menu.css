@@ -1,0 +1,140 @@
+@media (max-width: 690px) {
+    /* body {
+        min-width: 1440px;
+    } */
+    .showcase ul {
+        flex-wrap: wrap !important;
+    }
+}
+@media (max-width: 500px) {
+    .showcase ul {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+
+    }
+}
+.welcome
+{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: flex-start;
+    background: #73755d;
+    color: #d7d4bf;
+}
+.card h3
+{
+    color: #343434;
+}
+.card p
+{
+    color: #343434;
+}
+.nav
+{
+    text-align: center;
+    width: 960px;
+    margin:0 auto;
+}
+    .nav::before
+    {
+        content:'';
+        display: block;
+        height: 50px;
+        width: 100%;
+        background: #FF8400;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .nav ul{
+        margin:0;
+        padding: 0;
+        list-style: none;
+        height: 50px;
+    }
+    
+    .nav ul li {
+        float: left;
+    }
+    .nav input
+    {
+        float: right;
+        margin: 10px 10px 10px 10px;
+        position: static;
+        display: block;
+        margin-top: 10px;
+        height: 30px;
+        padding: 0 30px;
+        text-decoration: none;
+        line-height: 50px;
+    }
+    .nav ul li a{
+        color:#fff;
+        display: block;
+        height: 50px;
+        padding: 0 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 50px;
+    }
+    .nav ul li a:hover
+    {
+        background: #ff0;
+    }
+.center
+{
+    text-align: center;
+}
+.divider-text {
+    margin: 0 auto;
+    width: 95%;
+    height: 1px;
+    background-color: var(--grey);
+}
+
+.divider-page {
+    width: 100%;
+    height: 1px;
+    background-color: var(--grey);
+}
+    .showcase ul {
+        align-items: center;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        margin: 0;
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+    .showcase li {
+        margin: 0;
+        padding: 0;
+    }
+
+.price
+{
+    color: #73755d;
+    text-align: center;
+}
+.card{
+    text-align: center;
+    background: #d7d4bf;
+    height: auto;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 80%;
+    border: gray;
+    border-width: 20px;
+    border-radius: 10%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
