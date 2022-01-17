@@ -5,23 +5,51 @@
  <meta name ="viewport" content="width=device-width,initial-scale=1.0">
  <meta http-equiv="X-UA-Comatible" content ="ie=edge">
  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
  <title>Koktem</title>
  <link rel="stylesheet" href="css/desserts.css">
 </head>
 
 <body>
   <header>
-    <div id="logo" onclick="slowScroll('#top')">
-      <span><a href="index.html">Koktem</a></span>
 
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Koktem</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Drinks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-    <div id="about">
-
-      <a href="menu.html">Блюда</a>
-      <a href="beverages.html">Напитки</a>
-      <a href="#assor">Ассортимент</a>
-
-    </div>
+  </div>
+</nav>
   </header>
 
   <main>
@@ -30,7 +58,7 @@
           <div class="full-screen__title">Koktem</div>
             <div class="full-screen__text">Koktem's little bakery</div>
           </div>
-          
+
           <video autoplay muted loop preload="auto" class="full-screen__video">
             <source type="video/mp4" src="video/koktem.mp4">
           </video>
@@ -41,14 +69,15 @@
               <div class="lozung">
                 <h1 align="center">Хиты Продаж</h1>
               </div>
-    
+
               <div class="photo">
                 <img src="img/1.jpg" height="320px" width="320px">
                 <img src="img/2.jpg" height="320px" width="320px">
                 <img src="img/3.jpg" height="320px" width="320px">
                 <img src="img/4.jpg" height="320px" width="320px">
               </div>
-      
+
+
               <div class="line">
                 <hr align="center" width="320px" size="7" color="white" />
                 <hr align="center" width="320px" size="7" color="white" />
@@ -58,51 +87,52 @@
             </div>
 
 
-            <h1 align="center">Ассортимент</h1>          
-        <div class="assor" id="assor"><div class="product-item">
-          <img src="https://www.good-menu.ru/img/postre/postre93.jpg">
-          <div class="product-list">
-            <h3>Молочная девочка</h3>
-            <span class="price">8 900 тг</span>
-            <a href="" class="button">Заказать</a>
-          </div>
-        </div>
+            <h1 align="center">Ассортимент</h1>
 
-        <div class="product-item1">
-          <img src="https://2recepta.com/recept/tort-snikers/tort-snikers.jpg">
-          <div class="product-list1">
-            <h3>Сникерс</h3>
-            <span class="price1">6 500 тг</span>
-            <a href="" class="button1">Заказать</a>
-          </div>
-        </div>
-        
-        <div class="product-item2">
-          <img src="https://www.good-menu.ru/img/postre/postre79.jpg">
-          <div class="product-list2">
-            <h3>Твороженый</h3>
-            <span class="price2">7 500 тг</span>
-            <a href="" class="button2">Заказать</a>
-          </div>
-        </div>
 
-        <div class="product-item3">
-          <img src="https://www.photorecept.ru/wp-content/uploads/2021/06/medovik-1300x868.jpg">
-          <div class="product-list3">
-            <h3>Медовик</h3>
-            <span class="price3">6 000 тг</span>
-            <a href="" class="button3">Заказать</a>
-          </div>
-        </div>
-      
+  <div class="card-group">
+    <div class="card">
+      <img src="https://www.good-menu.ru/img/postre/postre93.jpg" class="card-img-top" alt="https://www.good-menu.ru/img/postre/postre93.jpg">
+       <div class="card-body">
+        <h5 class="card-title">Молочная девочка</h5>
+        <p class="card-text">8 900 тг</p>
+        <p class="card-text"><small class="text-muted">Заказать</small></p>
+       </div>
+    </div>
+  <div class="card">
+    <img src="https://2recepta.com/recept/tort-snikers/tort-snikers.jpg" class="card-img-top" alt="https://2recepta.com/recept/tort-snikers/tort-snikers.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Сникерс</h5>
+        <p class="card-text">6 500 тг.</p>
+        <p class="card-text"><small class="text-muted">Заказать</small></p>
       </div>
-      
+  </div>
+  <div class="card">
+     <img src="https://www.good-menu.ru/img/postre/postre79.jpg" class="card-img-top" alt="https://www.good-menu.ru/img/postre/postre79.jpg">
+      <div class="card-body">
+        <h5 class="card-title">Твороженый</h5>
+        <p class="card-text">7 500 тг</p>
+        <p class="card-text"><small class="text-muted">Заказать</small></p>
+     </div>
+  </div>
+   <div class="card">
+  <img src="https://www.photorecept.ru/wp-content/uploads/2021/06/medovik-1300x868.jpg" class="card-img-top" alt="https://www.photorecept.ru/wp-content/uploads/2021/06/medovik-1300x868.jpg">
+   <div class="card-body">
+     <h5 class="card-title">Медовик</h5>
+     <p class="card-text">6 500 тг.</p>
+     <p class="card-text"><small class="text-muted">Заказать</small></p>
+   </div>
+ </div>
+</div>
+
+
+
       <footer>
         <div class="footer-content">
           <h3>Koktem's little bakery</h3>
           <p>Предлагаем восхитительные и неповторимые кондитерские шедевры к любому радостному и торжественному событию. Это могут свадебные, детские, юбилейные торты, многоярусные и объемные, с шоколадными фигурками и портретами, способные поразить воображение даже утонченных знатоков! </p>
         </div>
-        
+
         <div class="footer-bottom">
           <p><a href="index.html">Koktem</a> </p>
           <div class="footer-menu">
@@ -111,6 +141,7 @@
             </ul>
           </div>
         </div>
+
     </footer>
 
   </main>
@@ -131,4 +162,6 @@
     });
   </script>
   </body>
+  </html>
+
   </html>
