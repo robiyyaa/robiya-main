@@ -6,161 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal Menu</title>
     <link rel="stylesheet" href="css/menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <main>
-<body bgcolor=" #c4d4b4">
-<div>
-<nav class="nav">
-    <ul>
-        <li><a href="#fast">Фастфуд</a></li>
-        <li><a href="#soup">Супы</a></li>
-        <li><a href="#foreign">Зарубежная кухня</a></li>
-        <form >
-            <input type="search" placeholder="Поиск">
+<body>
+    <header>
+      <div class="navbar navbar-light bg-light shadow-sm">
+        <div class="container">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/logo.png" class="navimage">
+            <strong>Koktem cafe</strong>
+          </a>
+          <div class="d-flex">
+            <a class="navbar-a" style="margin-right: 3vw;" href="desserts.html">Десерты</a>
+            <a class="navbar-a" style="margin-right: 3vw;" href="beverages.html">Напитки</a>
+            <a class="navbar-a dropdown dropdown-toggle" data-bs-toggle="dropdown" role="button" style="margin-right: 3vw;">Ассортимент</a>
 
-        </form>
-    </ul>
-</nav>
-</div>
-    <div class="showcase" style="list-style: none;">
-        <h1 class="center" id="fast">Фастфуд</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<main>
+  <section class="py-5 text-center container">
+    <nav class="row py-lg-5 mt-5">
+      <nav class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light py-2">Добро пожаловать в Koktem cafe</h1>
+        <hr>
+        <p class="lead" style="color: var(--text-color-2);">Предлагаем вам выбрать блюда из шикорокого ассортимента. Разнообразьте свой день с нашим меню. Желаем приятного аппетита!</p>
+        <p>
+        <a href="#assor" class="btn btn-outline-success">Выбрать блюдо</a>
+        </p>
+      </div>
+    </nav>
+  </section>
+  <div class="content">
+    <br id="assor">
+    <h3 class="title">ФастФуд</h3>
+    <div class="container">
+      <div class="row">
+        <div class="card product" style="width: 22rem;">
+          <img class="card-img-top" src="img\set-burger.jpg" alt="Сет Бургер Классик">
+          <div class="card-body">
+            <h5 class="card-title">Сет Бургер</h5>
+            <span class="price">1900 тг</span>
+            <button type="button" class="button">Заказать</button>
+          </div>
+        </div>
+        <div class="card product" style="width: 22rem;">
+          <img class="card-img-top" src="img\set-hotdog.jpg" alt="Сет Хот-дог">
+          <div class="card-body">
+            <h5 class="card-title">Сет Хот-дог</h5>
+            <span class="price">1900 тг</span>
+            <button type="button" class="button">Заказать</button>
+          </div>
+        </div>
+        <div class="card product"  style="width: 22rem;">
+          <img class="card-img-top" src="img\set-burger.jpg" alt="Сет Бургер Классик">
+          <div class="card-body">
+            <h5 class="card-title">Сет Чикен-Бургер</h5>
+            <span class="price">1900 тг</span>
+            <button type="button" class="button">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="divider">
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <h3 class="title">ФастФуд</h3>
+    <div class="container">
+      <div class="row">
+        <div class="card product" style="width: 22rem;">
+          <img class="card-img-top" src="img\set-burger.jpg" alt="Сет Бургер Классик">
+          <div class="card-body">
+            <h5 class="card-title">Сет Бургер</h5>
+            <span class="price">1900 тг</span>
+            <button type="button" class="button">Заказать</button>
+          </div>
+        </div>
+        <div class="card product" style="width: 22rem;">
+          <img class="card-img-top" src="img\set-hotdog.jpg" alt="Сет Хот-дог">
+          <div class="card-body">
+            <h5 class="card-title">Сет Хот-дог</h5>
+            <span class="price">1900 тг</span>
+            <button type="button" class="button">Заказать</button>
+          </div>
+        </div>
+        <div class="card product" style="width: 22rem;">
+          <img class="card-img-top" src="img\set-burger.jpg" alt="Сет Бургер Классик">
+          <div class="card-body">
+            <h5 class="card-title">Сет Чикен-Бургер</h5>
+            <span class="price">1900 тг</span>
+            <button type="button" class="button">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="divider">
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <h3 class="title">ФастФуд</h3>
+    <div class="container">
+      <div class="row">
+        <div class="card product" style="width: 22rem;">
+          <img class="card-img-top" src="img\set-burger.jpg" alt="Сет Бургер Классик">
+          <div class="card-body">
+            <h5 class="card-title">Сет Бургер</h5>
+            <span class="price">1900 тг</span>
+            <button type="button" class="button">Заказать</button>
+          </div>
+        </div>
+        <div class="card product" style="width: 22rem;">
+          <img class="card-img-top" src="img\set-hotdog.jpg" alt="Сет Хот-дог">
+          <div class="card-body">
+            <h5 class="card-title">Сет Хот-дог</h5>
+            <span class="price">1900 тг</span>
+            <button type="button" class="button">Заказать</button>
+          </div>
+        </div>
+        <div class="card product" style="width: 22rem;">
+          <img class="card-img-top" src="img\set-burger.jpg" alt="Сет Бургер Классик">
+          <div class="card-body">
+            <h5 class="card-title">Сет Чикен-Бургер</h5>
+            <span class="price">1900 тг</span>
+            <button type="button" class="button">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="divider">
+  </div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+  </div>
+          <footer class="footer">
+            <div class="footer-bottom">
+              <p><a href="index.html">Koktem</a> </p>
+              <div class="footer-menu">
+                <ul class="f-menu">
+                  <li><a href="">Home</a></li>
+                </ul>
+              </div>
+            </div>
+        </footer>
         
-         <ul>
-            <li>
-                <div class="card">
-                
-                <img src="img\set-burger.jpg" alt="КлассикБургер" class="card" style="width:100%">
-                <h3>Сет Бургер Классик</h3>
-                <p>Классический бургер, кола, картофель фри</p>
-                <strong class="price">2800тг</strong>
-                <br>
-                <br>
-                
-    </div>
-            </li>
-
-
-            <li> 
-                <div class="card">
-                    
-                    <img src="img\set-murshroom.jpg" alt="Маршрум" class="card" style="width: 100%">
-                    <h3>Сет Маршрум Бургер</h3>
-                    <p>Бургер с грибами, кола, картофель фри</p>
-                    <strong class="price">2800тг</strong>
-                    <br>
-                    <br>
-                    
-                </div>
-            </li>
-
-            
-            <li>
-                <div class="card">
-                    
-                    <img src="img\set-hotdog.jpg" alt="ХотДог" class="card" style="width:100%">
-                    <h3>Сет ХотДог</h3>
-                    <p>ХотДог, кола, картофель фри</p>
-                    <strong class="price">1900тг</strong>
-                    <br>
-                    <br>
-                </div> 
-            </li>
-         </ul>
-     </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-     <hr>
-
-     <div class="showcase" style="list-style: none;">
-        <h1 class="center" id="soup">Супы</h1>
-        <ul>
-           <li>
-               <div class="card">
-               
-               <img src="img\pelmeni.jpg" alt="Пельмени" class="card" style="width:100%">
-               <h3>Пельмени по домашнему</h3>
-               <p>Вкусные пельмени, прямо как дома</p>
-               <strong class="price">1500тг</strong>
-               <br>
-               <br>
-               
-   </div>
-           </li>
-
-
-           <li> 
-               <div class="card">
-                   <img src="img\Sorpa.jpg" alt="Сорпа из баранины" class="card" style="width: 100%">
-                   <h3>Сорпа из баранины</h3>
-                   <p>Бульон из баранины с овощами</p>
-                   <strong class="price">1700тг</strong>
-                   <br>
-                   <br>
-                   
-               </div>
-           </li>
-
-           
-           <li>
-               <div class="card">
-                   
-                   <img src="img\borsh.jpg" alt="Борщ" class="card" style="width:100%">
-                   <h3>Борщ</h3>
-                   <p>Вкусный борщ с говяжим бульоном</p>
-                   <strong class="price">1200тг</strong>
-                   <br>
-                   <br>
-               </div> 
-           </li>
-        </ul>
-    </div>
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-    <hr>
-
-    <div class="showcase" style="list-style: none;">
-        <h1 class="center" id="foreign">Зарубежная Кухня</h1>
-        <ul>
-           <li>
-               <div class="card">
-               
-               <img src="img\BuerreBlanc.jpg" alt="Лосось Бер-Блан" class="card" style="width:100%">
-               <h3>Лосось Бер-Блан</h3>
-               <p>Насладитесь английской кухней</p>
-               <strong class="price">3800тг</strong>
-               <br>
-               <br>
-               
-   </div>
-           </li>
-
-
-           <li> 
-               <div class="card">
-                   <img src="img\Befstro.jpg" alt="Бефстроганофф" class="card" style="width: 100%">
-                   <h3>Бефстроганофф</h3>
-                   <p>Французская кухня с мясом из телятины</p>
-                   <strong class="price">2200тг</strong>
-                   <br>
-                   <br>
-               </div>
-           </li>
-
-           
-           <li>
-               <div class="card">
-                   <img src="img\Telyapiya.jpg" alt="Теляпия" class="card" style="width:100%">
-                   <h3>Теляпия с кус кусом</h3>
-                   <p>Изысканный вкус необычной еды</p>
-                   <strong class="price">2500тг</strong>
-                   <br>
-                   <br>
-               </div> 
-           </li>
-        </ul>
-    </div>
-    <hr>
-    <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-</body>
+</main>
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+        function slowScroll(id) {
+          $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 500);
+        }
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+          $("header").removeClass("fixed");
+          else {
+            $("header").attr("class", "fixed");
+          }
+        });
+      </script>
+      </body>
 </main>
 </html>
