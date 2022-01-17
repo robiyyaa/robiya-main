@@ -1,21 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Open+Sans:wght@400;700&display=swap');
-@media (max-width: 690px) {
-    /* body {
-        min-width: 1440px;
-    } */
-    .showcase ul {
-        flex-wrap: wrap !important;
-
-    }
-}
-@media (max-width: 500px) {
-    .showcase ul {
-        padding-left: 1em !important;
-        padding-right: 1em !important;
-
-    }
-}
 
 :root {
     --white: #efefef;
@@ -25,37 +9,17 @@
     --light-red: #ed3d3f;
     --text-black: #333;
     --gradient: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);
-}
-body {
-    margin: 0px;
-    padding: 0px;
-}
 
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    }
-    
-@media (min-width: 768px) {
-.bd-placeholder-img-lg {
-    font-size: 3.5rem;
-}
+    --bg-color-1: #73755d;
+    --bg-color-2: #c3d4b4;
+    --bg-color-3: #d7d4df;
+    --text-color-1: #343434;
+    --text-color-2: #414141;
 }
 
 .navbar-a {
 text-decoration: none;
 color: #212529;
-}
-
-:root{
---bg-color-1: #73755d;
---bg-color-2: #c3d4b4;
---bg-color-3: #d7d4df;
---text-color-1: #343434;
---text-color-2: #414141;
 }
 
 .card:hover{
@@ -88,16 +52,30 @@ color: var(--text-color-2);
 }
 
 #logo {
-    width: 2em;
-    border-radius: 100%;
+    width: 3em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    margin-left: 2em;
+}
+#breakline {
+    height: 1px;
+        background-color: var(--text-color-2);
+        margin: 0 auto;
+        width: 90%;
 }
 
-/* 
-.fixed-top {
-    position:fixed;
-    top:0;
-    right:0;
-    left:0;
-    z-index:1030
-} */
+.beverage-img {
+    height: 255px;
+    background-position: center;
+    background-size: cover;
+}
+#beverage-1 {background-image: url(/img/beverage1.png);}
+#beverage-2 {background-image: url(/img/beverage2.jpeg);}
+#beverage-3 {background-image: url(/img/beverage3.jpeg);}
+#beverage-4 {background-image: url(/img/beverage4.jpeg);}
+#beverage-5 {background-image: url(/img/beverage5.jpeg);}
+#beverage-6 {background-image: url(/img/beverage6.jpeg);}
+#beverage-7 {background-image: url(https://images.askmen.com/1080x540/2021/07/15-104443-what_is_proffee_here_s_why_fitness_pros_are_combining_protein_with_coffee.jpg);}
+#beverage-8 {background-image: url(https://images.everydayhealth.com/images/heart-health/coffee-and-your-heart-stimulant-or-stressor-alt-722x406.jpg);}
+
 

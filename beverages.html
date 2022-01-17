@@ -14,19 +14,12 @@
   <div class="navbar navbar-light bg-light shadow-sm">
     <div class="container">
       <a href="index.html" class="navbar-brand d-flex align-items-center">
-        <img src="img/logo.png" style="
-        width: 3em;
-        border-radius: 50%;
-        margin-right: 0.5em;
-        margin-left: 2em;
-        
-
-        ">
+        <img src="img/logo.png" id="logo">
         <strong>Koktem cafe</strong>
       </a>
       <div class="d-flex">
-          <a class="navbar-a" style="margin-right: 3vw;" href="menu.html">Блюда</a>
-          <a class="navbar-a" style="margin-right: 3vw;" href="desserts.html">Десерты</a>
+          <a class="navbar-a me-5" href="menu.html">Блюда</a>
+          <a class="navbar-a me-5" href="desserts.html">Десерты</a>
           <a class="navbar-a" href="#pricelist">Прайслист</a>
       </div>
     </div>
@@ -38,13 +31,8 @@
     <div class="row py-lg-5 mt-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light py-2">Добро пожаловать в Koktem bar</h1>
-        <div class="" style="
-        height: 1px;
-        background-color: var(--text-color-2);
-        margin: 0 auto;
-        width: 90%;
-        "></div>
-        <p class="lead " style="color: var(--text-color-2);">Предлагаем вам выбереть напитки из шикорокого ассортимента. Напитки на каждый день. Разнообразьте свой день с нашим меню. Люди будте добрее.</p>
+        <div id="breakline"></div>
+        <p class="lead">Предлагаем вам выбереть напитки из шикорокого ассортимента. Напитки на каждый день. Разнообразьте свой день с нашим меню. Люди будте добрее.</p>
         <p>
           <a href="#drinks" class="btn btn-outline-success my-3">Выбрать напиток</a>
           <a href="#pricelist" class="btn btn-outline-success my-3">Прайслист</a>
@@ -82,24 +70,14 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="drinks">
         <div class="col">
           <div class="card shadow-sm">
-            <div style="
-            height: 255px;
-            background-image: url(img/beverage1.png);
-            background-position: center;
-
-            
-            background-size: cover;
-            "></div>
+            <div class="beverage-img" id="beverage-1" ></div>
 
             <div class="card-body">
               <h2>Мамасито</h2>
               <p class="card-text">Отличный выбор для любителей высококачественных напитков. Подойдет под любой стиль жизни.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-success">Заказать</button>                
-                </div>
-                <small 
-                class="text-muted">1250тг.</small>
+                  <button type="button" class="btn btn-sm btn-success">Заказать</button>              
+                <small class="text-muted">1250тг.</small>
               </div>
             </div>
           </div>
@@ -107,11 +85,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <div style="
-            height: 255px;
-            background-image: url(img/beverage2.jpeg);
-            background-position: center;          
-            "></div>          
+            <div class="beverage-img" id="beverage-2"></div>          
 
             <div class="card-body">
               <h2>Макачино</h2>
@@ -128,12 +102,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <div style="
-            height: 255px;
-            background-image: url(img/beverage3.jpeg);
-            background-position: center;      
-            background-size: cover;    
-            "></div>          
+            <div class="beverage-img" id="beverage-3"></div>          
 
             <div class="card-body">
               <h2>Капучино</h2>
@@ -149,12 +118,7 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-            <div style="
-            height: 255px;
-            background-image: url(img/beverage4.jpeg);
-            background-position: center;      
-            background-size: cover;    
-            "></div>          
+            <div class="beverage-img" id="beverage-4"></div>        
 
             <div class="card-body">
               <h2>Принцесито</h2>
@@ -171,12 +135,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <div style="
-            height: 255px;
-            background-image: url(img/beverage5.jpeg);
-            background-position: center;      
-            background-size: cover;    
-            "></div>          
+            <div class="beverage-img" id="beverage-5"></div>      
 
             <div class="card-body">
               <h2>Булерито</h2>
@@ -193,15 +152,10 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <div style="
-            height: 255px;
-            background-image: url(img/beverage6.jpeg);
-            background-position: center;      
-            background-size: cover;    
-            "></div>          
+            <div class="beverage-img" id="beverage-6"></div>         
 
             <div class="card-body">
-              <h2>Поцелуй бывшей</h2>
+              <h2>Мисс Кейти</h2>
               <p class="card-text">Отличный выбор для любителей высококачественных напитков. Подойдет под любой стиль жизни.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -215,16 +169,11 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <div style="
-            height: 255px;
-            background-image: url(https://images.askmen.com/1080x540/2021/07/15-104443-what_is_proffee_here_s_why_fitness_pros_are_combining_protein_with_coffee.jpg);
-            background-position: center;      
-            background-size: cover;    
-            "></div>          
+            <div class="beverage-img" id="beverage-7"></div>         
 
             <div class="card-body">
-              <h2>Игра на пляже</h2>
-              <p class="card-text">Посиделки на пляже. Несильные волны, прятный бриз, только не забудь солнцезащитный крем!</p>
+              <h2>Вечеринка</h2>
+              <p class="card-text">Отличный выбор для любителей высококачественных напитков. Подойдет под любой стиль жизни.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-success">Заказать</button>                
@@ -237,12 +186,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <div style="
-            height: 255px;
-            background-image: url(https://images.everydayhealth.com/images/heart-health/coffee-and-your-heart-stimulant-or-stressor-alt-722x406.jpg);
-            background-position: center;      
-            background-size: cover;    
-            "></div>          
+            <div class="beverage-img" id="beverage-8"></div>        
 
             <div class="card-body">
               <h2>Просто кофе</h2>
