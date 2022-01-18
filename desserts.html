@@ -47,13 +47,13 @@
     <div class="full-screen">
         <div class="full-screen__body">
           <div class="full-screen__title">Koktem</div>
-            <div class="full-screen__text">Koktem's little bakery</div>
-          </div>
+          <div class="full-screen__text">Koktem's little bakery</div>
+        </div>
 
           <video autoplay muted loop preload="auto" class="full-screen__video">
             <source type="video/mp4" src="video/koktem.mp4">
           </video>
-        </div>
+      </div>
 
         <div class="content container-fluid">
             <div class="content__container">
@@ -83,7 +83,7 @@
 
             <h1 align="center">Ассортимент</h1>
 
-<div class="container">
+<div class="container mb-5">
 
   <div class="row">
 
@@ -116,42 +116,53 @@
   </div>
   </div>
 
+  <div id="carouselExampleIndicators" class="carousel carousel-dark slide container-fluid g-0" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="custom-carousel container-fluid" id="carousel-item-1"></div>
+      </div>
+      <div class="carousel-item">
+        <div class="custom-carousel container-fluid" id="carousel-item-2"></div>
+      </div>
+      <div class="carousel-item">
+        <div class="custom-carousel container-fluid" id="carousel-item-3"></div>
+      </div>
+      <div class="carousel-item">
+        <div class="custom-carousel container-fluid" id="carousel-item-4"></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-
-      <footer>
-        <div class="footer-content">
-          <h3>Koktem's little bakery</h3>
-          <p>Предлагаем восхитительные и неповторимые кондитерские шедевры к любому радостному и торжественному событию. Это могут свадебные, детские, юбилейные торты, многоярусные и объемные, с шоколадными фигурками и портретами, способные поразить воображение даже утонченных знатоков! </p>
-        </div>
-
-        <div class="footer-bottom">
-          <p><a href="index.html">Koktem</a> </p>
-          <div class="footer-menu">
-            <ul class="f-menu">
-              <li><a href="">Home</a></li>
-            </ul>
-          </div>
-        </div>
-
+  <div class="container footer-new">
+    <footer class="py-2 my-3">
+      <ul class="nav justify-content-center pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">На главную</a></li>
+        <li class="nav-item"><a href="menu.html" class="nav-link px-2 text-muted">Меню</a></li>
+        <li class="nav-item"><a href="desserts.html" class="nav-link px-2 text-muted">Десерты</a></li>
+        <li class="nav-item"><a href="#drinks" class="nav-link px-2 text-muted">Выбрать напиток</a></li>
+        <li class="nav-item"><a href="https://www.instagram.com" class="nav-link px-2 text-muted">instagram</a></li>
+      </ul>
+      <p class="text-center text-muted">Koktem cafe :)</p>
     </footer>
+  </div>
 
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    function slowScroll(id) {
-      $('html, body').animate({
-        scrollTop: $(id).offset().top
-      }, 500);
-    }
-    $(document).on("scroll", function () {
-      if($(window).scrollTop() === 0)
-      $("header").removeClass("fixed");
-      else {
-        $("header").attr("class", "fixed");
-      }
-    });
-  </script>
   </body>
   </html>
 

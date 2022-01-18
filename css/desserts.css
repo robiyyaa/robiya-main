@@ -19,6 +19,17 @@ body, html {
   height: 2000px;
 }
 
+.custom-carousel {
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+#carousel-img-1 {background-image: url(img/dessert-carousel-1.jpg);}
+#carousel-img-2 {background-image: url(img/dessert-carousel-2.jpg);}
+#carousel-img-3 {background-image: url(img/dessert-carousel-3.jpg);}
+#carousel-img-4 {background-image: url(img/dessert-carousel-4.jpg);}
 
 
 header {
@@ -527,11 +538,16 @@ h1 {
 
 footer{
     /* background: var(--bg-color-1); */
-    background-color: white;
+    background-color: #c3d4b4;
     height: auto;
 
     padding-top: 40px;
     color: var(--text-color-1);
+}
+.footer-new {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  position: relative;
+  z-index: 3;
 }
 .footer-content{
     display: flex;
