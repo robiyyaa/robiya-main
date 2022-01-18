@@ -13,12 +13,6 @@
   padding: 0;
   outline: none;
 }
-
-body, html {
-  width: 100%;
-  height: 2000px;
-}
-
 .navimage
 {
   width: 3em;
@@ -65,21 +59,7 @@ header #logo span {
     font-size: 1.5em;
   }
 }
-#about {
-  text-align: center;
-  font-size: 1em;
-  line-height: 40px;
-  margin-bottom: 10px;
-}
-#about > a {color: #fff}
-#about > a:hover {
-  color: #b0b0b0;
-  text-decoration: underline;
 
-}
-#about> a:not(:last-child){
-  margin-right: 7%;
-}
 
 a:-webkit-any-link {
     color: black;
@@ -87,7 +67,7 @@ a:-webkit-any-link {
 }
 
 .fixed {
-  z-index: 5000;
+  z-index: 5  ;
   background-color: white;
   border-bottom: 1px solid silver;
 }
@@ -97,17 +77,8 @@ header.fixed #logo {
 .fixed #about a {color: #343434; text-decoration: none;}
 .fixed #about a:hover {color: #7c7c7c; text-decoration: none;}
 
-#top {
-  width: 100%;
-  background: url(video/Koktem.mp4);
-  background-blend-mode: multiply;
-  background-color: gray;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
-}
 
-@media (min-width:1001px) {
+@media (min-width:100px) {
   #top {
     font-size: 2em;
     height: 560px;
@@ -210,7 +181,6 @@ h1, h2, h3, h4, h5 {
   margin-left: 38%;
   font-size: 1.1em;
 }
-/* Обнуление */
 *,
 *::before,
 *::after {
@@ -240,7 +210,7 @@ body {
 }
 
 .wrapper {
-  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
 }
@@ -248,7 +218,6 @@ body {
 .content {
 align-items: center;
 position: relative;
-z-index: 5;
 justify-content: space-evenly;
 background-color: var(--bg-color-2);
 padding-bottom: 5px;
@@ -277,6 +246,10 @@ padding-bottom: 5px;
    background: white;
    font-family: "Open Sans";
    transition: .3s ease-in;
+}
+.card
+{
+  width: 30rem;
 }
 .card:hover{
   scale: 1.01;
@@ -387,22 +360,10 @@ padding-right: 10px;
 display: block;
 }
 .footer-menu ul li a{
-  /* color: #cfd2d6; */
   color: var(--text-color-1);
   text-decoration: none;
 }
-.footer-menu ul li a:hover{
-  /* color: #27bcda; */
-  color: var(--text-color-2);
-}
 
-@media (max-width:500px) {
-.footer-menu ul{
-  display: flex;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-}
 .divider
 {
     border: white;
@@ -413,4 +374,56 @@ display: block;
     width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+.nodecor
+{
+  list-style-type: none;
+}
+.dropbtn {
+  background-color: #c3d4b4;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.dropdown {
+  background-color: #c3d4b4;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  align-items: center;
+  position: relative;
+  display: none;
+  position: absolute;
+  background-color: rgb(220, 220, 220);
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-decoration-style: none;
+  position: relative;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover 
+{
+  position: relative;
+  background-color: #fd9800
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
