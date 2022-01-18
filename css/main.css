@@ -190,18 +190,6 @@ a:-webkit-any-link {
     cursor: pointer;
 }
 
-.custom-carousel {
-  height: 60vh;
-  background-position: center;
-  background-size: cover;
-  
-}
-
-#carousel-img-1 {background-image: url(https://www.vinterier.ru/pictures/shop/krasivyiy-peiyzag-kartina-maslom-40x30.JPG);}
-#carousel-img-2 {background-image: url(https://papik.pro/uploads/posts/2021-09/1631895769_6-papik-pro-p-malenkie-risunki-peizazhi-6.jpg);}
-#carousel-img-3 {background-image: url(https://artworld.ru/images/cms/content/catalog2/kartina_v_interier_pejzazh_maslom_v_lesnoj_tishi_ki200106.jpg);}
-#carousel-img-4 {background-image: url(https://images.shafastatic.net/145114982);}
-
 #delivery {
   width: 100%;
   /* float: right; */
