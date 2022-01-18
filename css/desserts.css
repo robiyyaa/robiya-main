@@ -310,14 +310,14 @@ h1 {
   object-fit: cover;
 }
 
-.content__padding {
+.content__container {
   max-width: 100%;
   margin: 0px auto;
   padding: 50px 15px;
   font-size: 18px;
   line-height: 150%;
 }
-.content__padding p {
+.content__container p {
   margin: 0px 0px 20px 0px;
 }
 .photo{
@@ -357,11 +357,6 @@ h1 {
    color: #444444;
    margin: 0 0 10px 0;
 }
-.card :hover {
-  scale: 1.01;
-  transition: 0.2s;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
-}
 .price {
    font-size: 16px;
    color: #fc5a5a;
@@ -382,11 +377,6 @@ h1 {
 .product-item:hover .button {
    background: #fc5a5a;
 }
-.product-item:hover  {
-  scale: 1.01;
-  transition: 0.2s;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
-}
 
 .product-item1 {
    width: 300px;
@@ -398,9 +388,7 @@ h1 {
    transition: .3s ease-in;
 }
 .product-item1:hover {
-  scale: 1.01;
-  transition: 0.2s;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
+   border-bottom: 2px solid #fc5a5a;
 }
 .product-item1 img {
    display: block;
@@ -447,9 +435,7 @@ h1 {
    transition: .3s ease-in;
 }
 .product-item2:hover {
-  scale: 1.01;
-  transition: 0.2s;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
+   border-bottom: 2px solid #fc5a5a;
 }
 .product-item2 img {
    display: block;
@@ -485,7 +471,7 @@ h1 {
 .product-item2:hover .button {
    background: #fc5a5a;
 }
-.row { margin-bottom: 20px;}
+
 .product-item3 {
    width: 300px;
    text-align: center;
@@ -496,9 +482,7 @@ h1 {
    transition: .3s ease-in;
 }
 .product-item3:hover {
-  scale: 1.01;
-  transition: 0.2s;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
+   border-bottom: 2px solid #fc5a5a;
 }
 .product-item3 img {
    display: block;
@@ -574,7 +558,6 @@ footer{
     background: var(--bg-color-2);
     width: 100vw;
     padding: 20px;
-    padding-bottom: 40px;
     text-align: center;
 }
 .footer-bottom p{
