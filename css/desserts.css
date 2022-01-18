@@ -357,6 +357,11 @@ h1 {
    color: #444444;
    margin: 0 0 10px 0;
 }
+.card :hover {
+  scale: 1.01;
+  transition: 0.2s;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
+}
 .price {
    font-size: 16px;
    color: #fc5a5a;
@@ -377,6 +382,11 @@ h1 {
 .product-item:hover .button {
    background: #fc5a5a;
 }
+.product-item:hover  {
+  scale: 1.01;
+  transition: 0.2s;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
+}
 
 .product-item1 {
    width: 300px;
@@ -388,7 +398,9 @@ h1 {
    transition: .3s ease-in;
 }
 .product-item1:hover {
-   border-bottom: 2px solid #fc5a5a;
+  scale: 1.01;
+  transition: 0.2s;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
 }
 .product-item1 img {
    display: block;
@@ -435,7 +447,9 @@ h1 {
    transition: .3s ease-in;
 }
 .product-item2:hover {
-   border-bottom: 2px solid #fc5a5a;
+  scale: 1.01;
+  transition: 0.2s;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
 }
 .product-item2 img {
    display: block;
@@ -471,7 +485,7 @@ h1 {
 .product-item2:hover .button {
    background: #fc5a5a;
 }
-
+.row { margin-bottom: 20px;}
 .product-item3 {
    width: 300px;
    text-align: center;
@@ -482,7 +496,9 @@ h1 {
    transition: .3s ease-in;
 }
 .product-item3:hover {
-   border-bottom: 2px solid #fc5a5a;
+  scale: 1.01;
+  transition: 0.2s;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
 }
 .product-item3 img {
    display: block;

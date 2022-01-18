@@ -6,43 +6,25 @@
  <meta http-equiv="X-UA-Comatible" content ="ie=edge">
  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
  <title>Koktem</title>
- <link rel="stylesheet" href="css/bootstrap.min.css">
  <link rel="stylesheet" href="css/main.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid container">
-      <a class="navbar-brand py-0 nav-links-animation" href="#">Koktem</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav  mb-2 mb-lg-0 navbar-font-custom-links">
-          <li class="nav-item me-5">
-            <a class="nav-link nav-links-animation" aria-current="page" href="menu.html">Menu</a>
-          </li>
-          <li class="nav-item me-5">
-            <a class="nav-link nav-links-animation" href="#">desserts</a>
-          </li>
-          <li class="nav-item me-5">
-            <a class="nav-link nav-links-animation" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Offcanvas</a>
-          </li>
-          <li class="nav-item dropdown me-md-3 active">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Меню
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Горячие блюда</a></li>
-              <li><a class="dropdown-item" href="#">Напитки</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Десерты</a></li>
-            </ul>
-          </li>
-          
-        </ul>
-      </div>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Koktem</span>
+
     </div>
-  </nav>
+    <div id="about">
+
+      <a href="#" title="Меню" onclick="slowScroll('#main')">О нас</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Меню">Меню</a>
+      <a href="#" onclick="slowScroll('#delivery')" title="Доставка">Доставка</a>
+
+    </div>
+  </header>
 
   <div id="top">
     <h1>Место, где живет Весна</h1>
@@ -67,14 +49,12 @@
   </div>
 
   <div id="overview">
+    <h2>Меню  </h2><br>
 
-    <!-- <div class="menu">
+    <div class="menu">
       <a href="menu.html">Кухня</a><br>
       <a href="desserts.html">Десерты</a><br>
       <a href="beverages.html">Напитки</a>
-    </div> -->
-    <div class="menu align-self-sm-center justify-content-sm-center">
-      <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse-1"><h2>Меню</h2></a><br>
     </div>
 
     <br><br><br><br><br>
@@ -82,55 +62,18 @@
     <!-- <h3>Новинки и круглосуточная доставка.</h3> -->
 
 
-<div class="row bg-light text-dark">
-  <div class="col container-fluid">
-    <div class="container-fluid collapse multi-collapse" id="collapse-1">
-      <a class="text-decoration-none text-dark" href="menu.html"><h1>Кухня</h1></a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut rerum molestias, iusto ipsam quod. Vel aut aliquam illo quibusdam illum ducimus officiis voluptate sed!</p>
-    </div>
-  </div>
-  <div class="col container-fluid">
-    <div class="container-fluid collapse multi-collapse" id="collapse-1">
-      <a class="text-decoration-none text-dark" href="desserts.html"><h1>Десерты</h1></a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut rerum molestias, iusto ipsam quod. Vel aut aliquam illo quibusdam illum ducimus officiis voluptate sed!</p>
-    </div>
-  </div>
-  <div class="col container-fluid">
-    <div class="container-fluid collapse multi-collapse" id="collapse-1">
-      <a class="text-decoration-none text-dark" href="beverages.html"><h1>Напитки</h1></a>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut rerum molestias, iusto ipsam quod. Vel aut aliquam illo quibusdam illum ducimus officiis voluptate sed!</p>
-    </div>
-  </div>
-</div>
-
-  <div id="row d-flex delivery container">
-    <h2>Доставка</h2>
-<div class="col">
-  <p>Cвой заказ можно получить круглосуточно 24\7 по адресу: г. Нур-Султан, ул.Д. Кунаева 12/1.
-    <br>
-    После получения смс уведомления, доставка осуществляться в течении 1 часа. Стоимость доставки 500 тенге, при заказе свыше 5000 тенге доставка бесплатная.</p>
-</div>
-   <div class="col">
-    <h2>Контакты</h2><br>
-    <p>+7 7172 68 9999<br>
-    +7 701 068 9993<br>
-    +7 701 111 4966</p>
-   </div>
+  <div id="delivery">
+    <h2>Доставка</h2><br><br>
+      <p>Cвой заказ можно получить круглосуточно 24\7 по адресу: г. Нур-Султан, ул.Д. Кунаева 12/1.
+      <br>
+      После получения смс уведомления, доставка осуществляться в течении 1 часа. Стоимость доставки 500 тенге, при заказе свыше 5000 тенге доставка бесплатная.</p>
+    <br><br><br><br>
+   <h2>Контакты</h2><br>
+     <p>+7 7172 68 9999<br>
+     +7 701 068 9993<br>
+     +7 701 111 4966</p>
   </div>
 
-  <div class="" id="footer">
-    <footer class="py-2">
-      <ul class="nav justify-content-center pb-3 mb-3">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">На главную</a></li>
-        <li class="nav-item"><a href="menu.html" class="nav-link px-2 text-muted">Меню</a></li>
-        <li class="nav-item"><a href="desserts.html" class="nav-link px-2 text-muted">Десерты</a></li>
-        <li class="nav-item"><a href="#drinks" class="nav-link px-2 text-muted">Выбрать напиток</a></li>
-        <li class="nav-item"><a href="https://www.instagram.com" class="nav-link px-2 text-muted">instagram</a></li>
-      </ul>
-      <p class="text-center text-muted">Koktem cafe :)</p>
-    </footer>
-  </div>
-  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     function slowScroll(id) {
@@ -146,6 +89,5 @@
       }
     });
   </script>
-  <script src="css/bootstrap.bundle.min.js"></script>
   </body>
   </html>
