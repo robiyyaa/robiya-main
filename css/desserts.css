@@ -558,7 +558,6 @@ footer{
     background: var(--bg-color-2);
     width: 100vw;
     padding: 20px;
-    padding-bottom: 40px;
     text-align: center;
 }
 .footer-bottom p{
