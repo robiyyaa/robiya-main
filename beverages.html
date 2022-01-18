@@ -11,62 +11,77 @@
   </head>
   <body>
 <header>
-  <div class="navbar navbar-light bg-light shadow-sm">
-    <div class="container">
+  <div class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container-fluid">
       <a href="index.html" class="navbar-brand d-flex align-items-center">
         <img src="img/logo.png" id="logo">
         <strong>Koktem cafe</strong>
       </a>
-      <div class="d-flex">
-          <a class="navbar-a me-5" data-bs-toggle="offcanvas" href="#reg-form" role="button" aria-controls="reg-form">Зарегистрироваться</a>
-          <a class="navbar-a me-5" href="menu.html">Блюда</a>
-          <a class="navbar-a me-5" href="desserts.html">Десерты</a>
-          <a class="navbar-a" href="#pricelist">Прайслист</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 justify-content-center align-items-center
+          <li class="nav-item">
+            <a class="navbar-a me-xxl-5" data-bs-toggle="offcanvas" href="#reg-form" role="button" aria-controls="reg-form">Зарегистрироваться</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-a me-xxl-5" href="menu.html">Блюда</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-a me-xxl-5" href="desserts.html">Десерты</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-a me-xxl-5" href="#pricelist">Прайслист</a>
+          </li>
+
+        </ul>
       </div>
     </div>
   </div>
+      
 </header>
+<!-- канвас -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="reg-form" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="reg-form">Зарегистрироваться</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
+    <label for="basic-url" class="form-label">Данные необходимые для регистрации</label>
       <div class="input-group mb-3">
+        
+        <input type="text" class="form-control" placeholder="Логин" aria-label="Username" aria-describedby="basic-addon1">
+        
         <span class="input-group-text" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
       </div>
       
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input type="text" class="form-control" placeholder="Пароль" aria-label="Password" aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Почта" aria-label="Recipient's username" aria-describedby="basic-addon2">
         <span class="input-group-text" id="basic-addon2">@example.com</span>
       </div>
       
-      <label for="basic-url" class="form-label">Your vanity URL</label>
+      <label for="basic-url" class="form-label">Личная информация</label>
       <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Имя">
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Фамилия">
       </div>
       
       <div class="input-group mb-3">
-        <span class="input-group-text">$</span>
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-        <span class="input-group-text">.00</span>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="Номер телефона">
       </div>
-      
-      <!-- <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-        <span class="input-group-text">@</span>
-        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-      </div> -->
-      
-      <!-- <div class="input-group">
-        <span class="input-group-text">With textarea</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
-      </div> -->
   </div>
 </div>
 </div>
+
 <main>
   <section class="py-5 text-center container">
     <div class="row py-lg-5 mt-5">
