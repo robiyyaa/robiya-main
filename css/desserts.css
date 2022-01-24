@@ -330,11 +330,6 @@ h1 {
    color: #444444;
    margin: 0 0 10px 0;
 }
-.card :hover {
-  scale: 1.01;
-  transition: 0.2s;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 50, .50) !important;
-}
 .price {
    font-size: 16px;
    color: #fc5a5a;
