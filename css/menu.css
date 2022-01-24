@@ -65,7 +65,7 @@ header #logo span {
     float: right;
     width: 67%;
   }
-  
+
 }
 
 @media (max-width: 700px){
@@ -289,7 +289,7 @@ padding-bottom: 5px;
 }
 .price {
    font-size: 16px;
-   color: #fc5a5a;
+   color: #808080;
    display: block;
    margin-bottom: 12px;
 }
@@ -431,7 +431,7 @@ display: block;
   display: block;
 }
 
-.dropdown-content a:hover 
+.dropdown-content a:hover
 {
   position: relative;
   background-color: #fd9800
