@@ -109,7 +109,6 @@ header.fixed #logo {
 @media (max-width:650px) {
   #top {
     font-size: 1.3em;
-    padding-top: 50%;
     height: 200px;
   }
 }
