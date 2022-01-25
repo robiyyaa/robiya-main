@@ -28,6 +28,21 @@ color: #212529;
     box-shadow:0 1rem 3rem rgba(0,0,50,.50)!important;
 }
 
+.custom-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 12px;
+    background: #cccccc;
+    color:  black;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 28px;
+    transition: .2s ease-in;
+ }
+ .custom-button:hover  {
+    background: #fc5a5a;
+ }
+
 body {
 /* background-image: url(img/welcome2.jpeg); */
 /* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/welcome.jpeg'); */
