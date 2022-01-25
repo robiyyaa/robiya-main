@@ -13,34 +13,33 @@
 </head>
 
 <body>
-  <header>
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Koktem</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="desserts.html">Desserts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="beverages.html">Drinks</a>
-        </li>
-
-
-      </ul>
-
+  <header class="z-5 p-0">
+    <div class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="img/logo.png" id="logo">
+          <strong>Koktem cafe</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="navbar-a me-xxl-5" href="menu.html">Блюда</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-a me-xxl-5" href="beverages.html">Напитки</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-a me-xxl-5" href="#pricelist">Прайслист</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-
-</nav>
   </header>
 
   <main>
@@ -147,9 +146,63 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-
-  <div class="container footer-new">
-    <footer class="py-2 my-3">
+  <div class="bg-white pb-3">
+    <div class="container py-5">
+      <section id="pricelist">
+        <h2 class="d-flex justify-content-center mt-5">Прайслист</h2>
+        <table class="table mt-5">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Название</th>
+              <th scope="col">Цена</th>
+              <th scope="col">Калории за порцию</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-success">
+              <th scope="row">1</th>
+              <td>Сникерс</td>
+              <td>6500тг.</td>
+              <td>500ccal</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Твороженый</td>
+              <td>7550тг.</td>
+              <td>380ccal</td>
+            </tr>
+            <tr class="table-success">
+              <th scope="row">3</th>
+              <td>Медовик</td>
+              <td>6500тг.</td>
+              <td>600ccal</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Молочная девочка</td>
+              <td>6000тг.</td>
+              <td>550ccal</td>
+            </tr>
+            <tr class="table-success">
+              <th scope="row">5</th>
+              <td>Красный бархат</td>
+              <td>7000тг.</td>
+              <td>700ccal</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Прага</td>
+              <td>4500тг.</td>
+              <td>350ccal</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+  <div class="footer-new">
+    <footer class="p-5 mb-3">
       <ul class="nav justify-content-center pb-3 mb-3">
         <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">На главную</a></li>
         <li class="nav-item"><a href="menu.html" class="nav-link px-2 text-muted">Меню</a></li>
