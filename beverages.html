@@ -10,6 +10,10 @@
 <link rel="stylesheet" href="css/beverages.css">
   </head>
   <body>
+
+    <div class="card p-2 music-box">
+        <div id="waltzToggler">Toggle music / press M</div>
+    </div>
 <header>
   <div class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container-fluid">
@@ -21,12 +25,16 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       
+      <!-- music box -->
+
       
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 justify-content-center align-items-center">
+          
           <li class="nav-item">
             <a class="navbar-a me-xxl-5" data-bs-toggle="offcanvas" href="#reg-form" role="button" aria-controls="reg-form">Зарегистрироваться</a>
           </li>
+          
           <li class="nav-item">
             <a class="navbar-a me-xxl-5" href="menu.html">Блюда</a>
           </li>
@@ -351,7 +359,8 @@
 
 
     <script src="css/bootstrap.bundle.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/script/script.js"></script>
       
   </body>
 </html>
