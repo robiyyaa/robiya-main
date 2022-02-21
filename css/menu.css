@@ -20,22 +20,29 @@
   margin-right: 0.5em;
   margin-left: 2em;
 }
+/* .start-img
+{
+background-size: cover;
+background-position: center;
+} */
 .card-img {
-  /* width: 30rem; */
   height: 30vh;
   background-size: cover;
   background-position: center;
 }
-#card-img-1 {background-image: url(https://1.downloader.disk.yandex.kz/preview/b9fda12f536f4f34944f3dbfbab60beb5985d388534415e5348b1032c4032573/inf/21XalGj2SRoGZv78sfbbPtydI4pIGqvas4OuD7jTYgA8GS_do24UHCdBrzAL1o3kE201RYvLqQyDac3VhqZ_RQ%3D%3D?uid=1016033090&filename=set-burger.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1864x970);}
-#card-img-2 {background-image: url(https://3.downloader.disk.yandex.kz/preview/03262966a5555ba5e8d71045c86fb17c32057906017319f937eef39b27e5018e/inf/u6_0RVHxNXnzkduUx_0sMNydI4pIGqvas4OuD7jTYgDHVbSBg56mk0Bp86i2VAdKvjgw7MqO3Mv_biuNoQVUGQ%3D%3D?uid=1016033090&filename=set-hotdog.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1879x970);}
-#card-img-3 {background-image: url(https://4.downloader.disk.yandex.kz/preview/9e5b55629706c30f1066eff0d10c0719f8e4db20172b0486cc19529d60c6f4e2/inf/yhRuH--ah2dzTgsnhJ3eYdydI4pIGqvas4OuD7jTYgCEdLeoXy9BMyeAJB5ipXayIxhaQcjQZH0q7TfuB4xn8w%3D%3D?uid=1016033090&filename=set-murshroom.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1879x970);}
-#card-img-4 {background-image: url(https://3.downloader.disk.yandex.kz/preview/09b20835519b8d01a559d0ffb714b2838ef42e3c29e7b3b2bf456255f580163b/inf/Mkazj5CDpoiYeaNDTBcjzNydI4pIGqvas4OuD7jTYgCJUt2fRSZ0C91m8fKNwrT3dYjaRGk7nLTbZyv55NuzNQ%3D%3D?uid=1016033090&filename=Sorpa.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1864x970);}
-#card-img-5 {background-image: url(https://3.downloader.disk.yandex.kz/preview/5b58c6d3bc9b1d54957b90a1a23618ff2d690df1170c1ec924c86777c4d1c4f9/inf/V0s5OXVLlffnqw-yH8x9ZdydI4pIGqvas4OuD7jTYgDLCVpbJN9IDTpL1tUvIOC4vstB3MIbLZbyEhzebbqx1w%3D%3D?uid=1016033090&filename=pelmeni.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1864x970);}
-#card-img-6 {background-image: url(https://4.downloader.disk.yandex.kz/preview/2172303a0e86700007a32e092cbd41f9947d9a0abf164c7c2788e57bfbfbfc47/inf/vomNh7WPCgTBWT0Iv-E3wjupnoaooW8aNdt7GcdhZ3h2_EDhEL27EPGIwblHNlUStrdy2YoHdTACwHzybez9NQ%3D%3D?uid=1016033090&filename=borsh.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1864x970);}
-#card-img-7 {background-image: url(https://3.downloader.disk.yandex.kz/preview/68cc4a98c632172d6366be3ab99cf98185a05d748cfe31b3e12f02b9810654a3/inf/cQuOWsVHI3rdZzPSH1OPEjupnoaooW8aNdt7GcdhZ3hK5OgFxvB7bIYuTNiz4aZKsm5IdVaZlPicBY11tzjZ1A%3D%3D?uid=1016033090&filename=Befstro.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1864x970);}
-#card-img-8 {background-image: url(https://1.downloader.disk.yandex.kz/preview/97dafbc8031cad34602633ea9893d88d19a6f992e7d417316574bbcda7af93f1/inf/roy83nHk0L1s-pOk6m06LheOndjmWEWUiBFnw8XUm1k5XeWsa-NiTT9voF82oCmiOEefkwEiGfLDSH4T_YxVDQ%3D%3D?uid=1016033090&filename=Telyapiya.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1864x970);}
-#card-img-9 {background-image: url(https://3.downloader.disk.yandex.kz/preview/098d845be89cadd81251899a5a1d33bbbb806ba7491f8b45021c783b422149c7/inf/L0mwGYK0rGDpXDY3HeYQSzupnoaooW8aNdt7GcdhZ3gEsIcPfa_r-pWYFbENC8xf3_oBNfQjzP7ZZ_u9A7scgQ%3D%3D?uid=1016033090&filename=BuerreBlanc.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1864x970);}
-
+/* #start 
+{
+  background-image: url(https://1.downloader.disk.yandex.kz/preview/3ad7f56fad245b3c179755e90f5b9a192f04d1e9291bb6582f0afe30f7168076/inf/Wc7zrs1nRh0BuU21MES4V61b66UnpxFHbP4S73OI8f03mdfgpscfZExZTQ9B0-Ezz8XJlbbJL9SQCwQjPzxCIg%3D%3D?uid=1016033090&filename=bckgmenu.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942)
+} */
+#card-img-1 {background-image: url(https://1.downloader.disk.yandex.kz/preview/b9fda12f536f4f34944f3dbfbab60beb5985d388534415e5348b1032c4032573/inf/21XalGj2SRoGZv78sfbbPtydI4pIGqvas4OuD7jTYgA8GS_do24UHCdBrzAL1o3kE201RYvLqQyDac3VhqZ_RQ%3D%3D?uid=1016033090&filename=set-burger.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942);}
+#card-img-2 {background-image: url(https://3.downloader.disk.yandex.kz/preview/03262966a5555ba5e8d71045c86fb17c32057906017319f937eef39b27e5018e/inf/u6_0RVHxNXnzkduUx_0sMNydI4pIGqvas4OuD7jTYgDHVbSBg56mk0Bp86i2VAdKvjgw7MqO3Mv_biuNoQVUGQ%3D%3D?uid=1016033090&filename=set-hotdog.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942);}
+#card-img-3 {background-image: url(https://4.downloader.disk.yandex.kz/preview/9e5b55629706c30f1066eff0d10c0719f8e4db20172b0486cc19529d60c6f4e2/inf/yhRuH--ah2dzTgsnhJ3eYdydI4pIGqvas4OuD7jTYgCEdLeoXy9BMyeAJB5ipXayIxhaQcjQZH0q7TfuB4xn8w%3D%3D?uid=1016033090&filename=set-murshroom.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942);}
+#card-img-4 {background-image: url(https://3.downloader.disk.yandex.kz/preview/09b20835519b8d01a559d0ffb714b2838ef42e3c29e7b3b2bf456255f580163b/inf/Mkazj5CDpoiYeaNDTBcjzNydI4pIGqvas4OuD7jTYgCJUt2fRSZ0C91m8fKNwrT3dYjaRGk7nLTbZyv55NuzNQ%3D%3D?uid=1016033090&filename=Sorpa.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942);}
+#card-img-5 {background-image: url(https://3.downloader.disk.yandex.kz/preview/5b58c6d3bc9b1d54957b90a1a23618ff2d690df1170c1ec924c86777c4d1c4f9/inf/V0s5OXVLlffnqw-yH8x9ZdydI4pIGqvas4OuD7jTYgDLCVpbJN9IDTpL1tUvIOC4vstB3MIbLZbyEhzebbqx1w%3D%3D?uid=1016033090&filename=pelmeni.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942);}
+#card-img-6 {background-image: url(https://4.downloader.disk.yandex.kz/preview/2172303a0e86700007a32e092cbd41f9947d9a0abf164c7c2788e57bfbfbfc47/inf/vomNh7WPCgTBWT0Iv-E3wjupnoaooW8aNdt7GcdhZ3h2_EDhEL27EPGIwblHNlUStrdy2YoHdTACwHzybez9NQ%3D%3D?uid=1016033090&filename=borsh.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942);}
+#card-img-7 {background-image: url(https://3.downloader.disk.yandex.kz/preview/68cc4a98c632172d6366be3ab99cf98185a05d748cfe31b3e12f02b9810654a3/inf/cQuOWsVHI3rdZzPSH1OPEjupnoaooW8aNdt7GcdhZ3hK5OgFxvB7bIYuTNiz4aZKsm5IdVaZlPicBY11tzjZ1A%3D%3D?uid=1016033090&filename=Befstro.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942);}
+#card-img-8 {background-image: url(https://1.downloader.disk.yandex.kz/preview/97dafbc8031cad34602633ea9893d88d19a6f992e7d417316574bbcda7af93f1/inf/roy83nHk0L1s-pOk6m06LheOndjmWEWUiBFnw8XUm1k5XeWsa-NiTT9voF82oCmiOEefkwEiGfLDSH4T_YxVDQ%3D%3D?uid=1016033090&filename=Telyapiya.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942);}
+#card-img-9 {background-image: url(https://3.downloader.disk.yandex.kz/preview/098d845be89cadd81251899a5a1d33bbbb806ba7491f8b45021c783b422149c7/inf/L0mwGYK0rGDpXDY3HeYQSzupnoaooW8aNdt7GcdhZ3gEsIcPfa_r-pWYFbENC8xf3_oBNfQjzP7ZZ_u9A7scgQ%3D%3D?uid=1016033090&filename=BuerreBlanc.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1016033090&tknv=v2&size=1898x942);}
 header {
   width: 100%;
   padding: 10px 0.5% 0px 0.5%;
