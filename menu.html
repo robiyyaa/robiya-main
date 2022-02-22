@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/menu.css">
+    <script src="https://kit.fontawesome.com/5b2be509a7.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -22,8 +23,10 @@
           </a>
 
           <div class="d-flex">
+            
             <a class="navbar-a" style="margin-right: 3vw;" href="desserts.html">Десерты</a>
             <a class="navbar-a" style="margin-right: 3vw;" href="beverages.html">Напитки</a>
+            <input type="text" placeholder="Search..">
           </div>
         </div>
       </nav>
@@ -160,21 +163,8 @@
     </footer>
         
     
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-      <script>
-        function slowScroll(id) {
-          $('html, body').animate({
-            scrollTop: $(id).offset().top
-          }, 500);
-        }
-        $(document).on("scroll", function () {
-          if($(window).scrollTop() === 0)
-          $("header").removeClass("fixed");
-          else {
-            $("header").attr("class", "fixed");
-          }
-        });
-      </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script\menu.js" charset="utf-8"></script>
       </body>
 </main>
 </html>
