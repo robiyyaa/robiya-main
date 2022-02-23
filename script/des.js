@@ -7,11 +7,14 @@
 const appleaudio= new Audio("sounds/apple-pay-success.mp3");
 // let starter =1;
 // $
+
+function soundClick() {
   $('#order').click(function(){
-if (appleaudio.paused ==true) {
-  appleaudio.play();
-  }
-  else {
-    appleaudio.pause();
-  }
-  });
+    if (appleaudio.paused ==true) {
+      appleaudio.play();
+      }
+      else {
+        appleaudio.pause();
+      }
+      });    
+}
