@@ -17,7 +17,7 @@ document.addEventListener('keypress', (m) => {
 document.querySelector('#waltzToggler').addEventListener('click', waltzToggler());
 
 document.querySelector('#waltzToggler').addEventListener('mouseover', () => {
-    
+
 })
 
 
@@ -40,6 +40,6 @@ for (let i = 0; i < document.querySelectorAll('.custom-button').length; i++) {
         hooray2.play();
         hooray3.play();
     })
-    
+
 }
 // $('.custom-button').
