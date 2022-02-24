@@ -1,12 +1,5 @@
-$(document).on("scroll", function () {
-    if($(window).scrollTop() === 0)
-          $("header").removeClass("fixed");
-    else {
-        $("header").attr("class", "fixed");
-    }
-});
 
-$("button").click(function(){
+$(".button").click(function(){
             var audio = new Audio();
             audio.src = 'sounds/bonapp.mp3';
             audio.autoplay = true;

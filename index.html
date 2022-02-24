@@ -128,10 +128,10 @@
       }, 500);
     }
     $(document).on("scroll", function () {
-      if($(window).scrollTop() === 0)
-      $("header").removeClass("fixed");
+      if($(window).scrollTop() != 0)
+      $("header").attr("class", "fixed");
       else {
-        $("header").attr("class", "fixed");
+      $("header").removeClass("fixed");
       }
     });
   </script>
