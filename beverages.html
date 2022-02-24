@@ -14,6 +14,11 @@
     <div class="card p-2 music-box">
         <div id="waltzToggler">Toggle music / press M</div>
     </div>
+    <a href="javascript:void()" onclick="openNav()" style="color: rgba(0, 0, 0, 0.788);">
+      <div class="card p-2 nav-box">
+        Навигация
+      </div>
+    </a>
 <header>
   <div class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container-fluid">
@@ -27,7 +32,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 justify-content-center align-items-center">
           <li class="nav-item">
-            <a class="nav-link me-5" href="javascript:void(0)" onclick="openNav()">Навигация</a>
+            <a class="nav-link me-5" href="javascript:void()" onclick="openNav()">Навигация</a>
         </li>
           <li class="nav-item">
             <a class="navbar-a me-xxl-5" data-bs-toggle="offcanvas" href="#reg-form" role="button" aria-controls="reg-form">Зарегистрироваться</a>
@@ -55,10 +60,12 @@
     <a href="index.html">На главную</a>
     <a href="menu.html">Меню</a>
     <a href="desserts.html">Десерты</a>
-    <a href="javascript:void(o)" onclick="musicToggler()">Включить / Выключить музыку</a>
+    <a href="javascript:void(o)" onclick="music1Toggler()">Включить / Выключить музыку</a>
     <p>Так же вы можете Включить / Выключить фоновую музыку нажатием клавиши M.</p>
   </div>
 </div>
+
+
 <!-- канвас -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="reg-form" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
