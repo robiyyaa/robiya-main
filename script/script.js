@@ -1,5 +1,5 @@
 // мы можем использовать один файл для всех сайтов
-
+// нет нельзя иди нахуй
 const waltz = new Audio('/sounds/waltz.mp3')
 waltz.volume = 0.1;
 

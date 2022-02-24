@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Koktem Bar</title>
 <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
+<script src="https://kit.fontawesome.com/670143ef33.js" crossorigin="anonymous"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/beverages.css">
   </head>
@@ -24,13 +24,11 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <!-- music box -->
-
-      
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 justify-content-center align-items-center">
-          
+          <li class="nav-item">
+            <a class="nav-link me-5" href="javascript:void(0)" onclick="openNav()">Навигация</a>
+        </li>
           <li class="nav-item">
             <a class="navbar-a me-xxl-5" data-bs-toggle="offcanvas" href="#reg-form" role="button" aria-controls="reg-form">Зарегистрироваться</a>
           </li>
@@ -51,6 +49,16 @@
   </div>
       
 </header>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index.html">На главную</a>
+    <a href="menu.html">Меню</a>
+    <a href="desserts.html">Десерты</a>
+    <a href="javascript:void(o)" onclick="musicToggler()">Включить / Выключить музыку</a>
+    <p>Так же вы можете Включить / Выключить фоновую музыку нажатием клавиши M.</p>
+  </div>
+</div>
 <!-- канвас -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="reg-form" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
@@ -93,7 +101,7 @@
 </div>
 
 <main>
-  <section class="py-5 text-center container">
+  <section class="py-5 text-center container" id="welcomen">
     <div class="row py-lg-5 mt-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light py-2">Добро пожаловать в Koktem bar</h1>
@@ -353,14 +361,14 @@
       <li class="nav-item"><a href="#drinks" class="nav-link px-2 text-muted">Выбрать напиток</a></li>
       <li class="nav-item"><a href="https://www.instagram.com" class="nav-link px-2 text-muted">instagram</a></li>
     </ul>
-    <p class="text-center text-muted">Koktem cafe :)</p>
+    <p class="text-center text-muted">Koktem cafe <i class="fa-solid fa-plate-utensils"></i> <a href="#"><img src="font-awesome-svg/circle-arrow-up.svg" width="20px"></a></p>
   </footer>
 </div>
 
 
     <script src="css/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/script/script.js"></script>
+    <script src="script/beverages.js"></script>
       
   </body>
 </html>
