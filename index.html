@@ -72,19 +72,19 @@
 <div class="row bg-light text-muted">
   <div class="col container-fluid">
     <div class="container-fluid collapse multi-collapse" id="collapse-1">
-      <a class="text-decoration-none text-dark" href="menu.html"><h1>Кухня</h1></a>
+      <a class="text-decoration-none text-dark" href="menu.html"><h1 onmouseover="style.color='#73755d'" onmouseout="style.color='black'">Кухня</h1></a>
       <p>Концепция кухни: веганская - насыщенная, пряная - индийская кухня.Также есть европейская, локальная, и паназиатская кухни, street food зона.</span></p>
     </div>
   </div>
   <div class="col container-fluid">
     <div class="container-fluid collapse multi-collapse" id="collapse-1">
-      <a class="text-decoration-none text-dark" href="desserts.html"><h1>Десерты</h1></a>
+      <a class="text-decoration-none text-dark" href="desserts.html"><h1 onmouseover="style.color='#73755d'" onmouseout="style.color='black'">Десерты</h1></a>
       <p>Мы готовим большой выбор авторских лимонадов, делаем домашние напитки. А также в меню представлен легкий алкоголь: разливной сидр и алкогольные коктейли.</p>
     </div>
   </div>
   <div class="col container-fluid">
     <div class="container-fluid collapse multi-collapse" id="collapse-1">
-      <a class="text-decoration-none text-dark" href="beverages.html"><h1>Напитки</h1></a>
+      <a class="text-decoration-none text-dark" href="beverages.html"><h1 onmouseover="style.color='#73755d'" onmouseout="style.color='black'">Напитки</h1></a>
       <p>В меню имеются десерты и выпечка. Также предоставляем торты на заказ.</p>
     </div>
   </div>
@@ -105,6 +105,7 @@
     +7 701 068 9993<br>
     +7 701 111 4966</p>
    </div>
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   </div>
 
   <div class="" id="footer">
@@ -120,21 +121,11 @@
     </footer>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    function slowScroll(id) {
-      $('html, body').animate({
-        scrollTop: $(id).offset().top
-      }, 500);
-    }
-    $(document).on("scroll", function () {
-      if($(window).scrollTop() === 0)
-      $("header").removeClass("fixed");
-      else {
-        $("header").attr("class", "fixed");
-      }
-    });
-  </script>
+
+
+
   <script src="css/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script/main.js" charset="utf-8"></script>
   </body>
   </html>
