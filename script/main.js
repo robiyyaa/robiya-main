@@ -1,13 +1,7 @@
 
-$('#main').hide();
-  $('#main').slideToggle(1300);
 
-  const audio= new Audio("sounds/apple-pay-success.mp3");
-  function soundClick() {
-    $('#overview').click(function(){
-      audio.play();
-        });
-  }
+
+
 
 
 mybutton = document.getElementById("myBtn");
@@ -22,13 +16,11 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+// --------------
 
 
+// ---------------
 
-
-
-
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
