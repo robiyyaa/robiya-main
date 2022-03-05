@@ -1,20 +1,10 @@
-//assel:
-// function soundClick() {
-//   var appleaudio = new Audio();
-//   appleaudio.src = 'apple-pay-success';
-//   appleaudio.autoplay = true; //audio.play();
-// }
+
 const appleaudio= new Audio("sounds/apple-pay-success.mp3");
 
 function soundClick1() {
   $('#order1').click(function(){
     appleaudio.play();
-    // if (appleaudio.paused ==true) {
-    //   appleaudio.play();
-    //   }
-    //   else {
-    //     appleaudio.pause();
-    //   }
+
       });
 }
 function soundClick2() {
@@ -29,22 +19,24 @@ function soundClick3() {
 
       });
 }
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
 
 function showSlides(n) {
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
+  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -55,28 +47,9 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
-// $(function(){
-//
-//         // #1 вариант (события не всплывают)
-//         $(".obj")
-//         .mouseenter(function() {
-//                  // навели курсор на объект (не учитываются переходы внутри элемента)
-//         })
-//         .mouseleave(function(){
-//                 // отвели курсор с объекта (не учитываются переходы внутри элемента)
-//         });
-// window.onload = function () {
-//   var a = document.querySelector('#ShowHide1');
-//   a.onmouseout = function(e) {
-//     document.getElementById('exemple1').style.display='none';
-//   }
-//
-//   a.onmouseover = function(e) {
-//     document.getElementById('exemple1').style.display='block';
-//   };
-// }
+
+
 // function mOver(obj)
 //        {
 //        obj.innerHTML="<div id='help_container'><button id='close'>X</button><p id='help_text'>Help Text</p></div>"
@@ -131,8 +104,8 @@ function showSlides(n) {
 //       });
 // });
 // function tip (tipOn, event) {
-// 	var tipText = document.getElementById("theTip"); // id соответствует, указанному в "непонятная фраза";
-// 	var tipOn = document.getElementById("tipOn"); // id подсказки;
+// 	var tipText = document.getElementById("theTip");
+// 	var tipOn = document.getElementById("tipOn");
 // 	tipOn.appendChild(tipText);
 //   if (document.addEventListener) {
 //
@@ -157,9 +130,9 @@ function showSlides(n) {
 //   function showTip (e) {
 // 		if (!e) e = window.event;
 // 		tipText.style.display = "block";
-// 		tipText.style.left = e.clientX;//положение подсказки по оси X, в данном случае совпадает с положением курсора
-// 		tipText.style.top = e.clientY + 5 + "px";//положение подсказки по оси Y. Задан отступ от курсора в 5 px.
-// 		tipOn.style.cursor = "help";//при наведении на фразу рядом с курсором появляется знак вопроса
+// 		tipText.style.left = e.clientX;
+// 		tipText.style.top = e.clientY + 5 + "px";
+// 		tipOn.style.cursor = "help";
 // 	}
 //
 // 	function hideTip (e) {
