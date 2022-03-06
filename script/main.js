@@ -1,12 +1,3 @@
-const mouse = new Audio("sounds\mouseclick.mp3");
-function soundClick() {
-  $('#order').click(function(){
-    mouse.play();}
-}
-
-
-
-
 mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -20,16 +11,35 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-// --------------
-
-
-// ---------------
 
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+// звук
+const music = new Audio('sounds/mouseclick.mp3')
+function soundClick() {
+  $('#order1').click(function(){
+    music.play();
+
+      });
+}
+
+// ---------------
+
+
+
+
+// // карусель
+// $(document).ready(function(){
+//   $('.slider').slick({
+//     arrows: true,
+//     dots: true
+//   });
+// });
+//
+// // ---------------
 
 
 
