@@ -1,18 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta charset="utf-8">
- <meta name ="viewport" content="width=device-width,initial-scale=1.0">
- <meta http-equiv="X-UA-Comatible" content ="ie=edge">
- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
 
-<!-- KOKTEM -->
-<!-- navbar -->
-<!-- fullscreen video -->
-<!-- ассортимент карточки -->
-<!-- slideshow -->
-<!-- прайслист -->
-<!-- footer -->
+  <title>Koktem service</title>
+   <link rel="stylesheet" href="css\des2.css">
+
+  <script type="module">
+  $(function() {
+    $(".p2").typed({
+      strings: ["Page not found", "try again", "nothin' here"],
+      typeSpeed: 50,
+      backSpeed: 10,
+      backDelay: 2000,
+      showCursor: true,
+      loop: true
+    });
+  });
+
+  $('.hero-down').mousedown(function() {
+    TweenMax.fromTo('.btn-react', 0.25, {
+      opacity: 0,
+      scale: 0
+    }, {
+      opacity: 0.25,
+      scale: 1,
+      onComplete: function() {
+        TweenMax.to('.btn-react', 0.25, {
+          opacity: 0,
+          scale: 0
+        });
+      }
+    });
+  });
+
+  // smooth scroll to div
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+  </script>
+
+
+</head>
+
+<body>
+  <div class="hero">
+    <div class="inner-text">
+      <p class="p1">404:</p>
+      <p class="p2">Error</p>
+    </div>
+  </div>
+  <script src="/assets/js/xy-polyfill.js" nomodule></script>
+  <script src="/assets/js/script.js" type="module"></script>
+</body>
+</html>
