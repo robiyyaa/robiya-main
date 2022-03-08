@@ -26,11 +26,16 @@ function soundClick() {
       });
 }
 
+const mus1 = new Audio('sounds/mouseclick.mp3')
+function soundClick1() {
+  $('#flowers').click(function(){
+    mus1.play();
+
+      });
+}
+
 
 // ---------------
-$(document).ready(function(){
-    $("text1").animate({left: '250px'});
-});
 
 
 
@@ -39,15 +44,16 @@ $(document).ready(function(){
 
 
 
-  function slowScroll(id) {
-    $('html, body').animate({
-      scrollTop: $(id).offset().top
-    }, 3000);
-  }
-  $(document).on("scroll", function () {
-    if($(window).scrollTop() === 0)
-    $("header").removeClass("fixed");
-    else {
-      $("header").attr("class", "fixed");
-    }
-  });
+
+  // function slowScroll(id) {
+  //   $('html, body').animate({
+  //     scrollTop: $(id).offset().top
+  //   }, 3000);
+  // }
+  // $(document).on("scroll", function () {
+  //   if($(window).scrollTop() === 0)
+  //   $("header").removeClass("fixed");
+  //   else {
+  //     $("header").attr("class", "fixed");
+  //   }
+  // });
