@@ -18,28 +18,22 @@ function topFunction() {
 }
 
 // звук
-const music = new Audio('sounds/mouseclick.mp3')
+const mus = new Audio('sounds/mouseclick.mp3')
 function soundClick() {
-  $('#order1').click(function(){
-    music.play();
+  $('#overview').click(function(){
+    mus.play();
 
       });
 }
 
+
 // ---------------
+$(document).ready(function(){
+    $("text1").animate({left: '250px'});
+});
 
 
 
-
-// // карусель
-// $(document).ready(function(){
-//   $('.slider').slick({
-//     arrows: true,
-//     dots: true
-//   });
-// });
-//
-// // ---------------
 
 
 
