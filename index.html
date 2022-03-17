@@ -33,9 +33,9 @@
     </div>
   </nav>
 
+
   <div id="top">
     <h1>Место, где живет Весна</h1>
-
     </div>
   </div>
 
@@ -55,11 +55,15 @@
     </div>
   </div>
 
+
+
+
+
   <div id="overview">
     <div class="menu align-self-sm-center justify-content-sm-center">
-      <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse-1"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+      <a onclick="soundClick();" class="text-decoration-none" data-bs-toggle="collapse" href="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse-1"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/></svg>
-     <h2>Меню</h2>
+     <h2>Menu</h2>
       </a>
      <br>
     </div>
@@ -72,21 +76,38 @@
 <div class="row bg-light text-muted">
   <div class="col container-fluid">
     <div class="container-fluid collapse multi-collapse" id="collapse-1">
-      <a class="text-decoration-none text-dark" href="menu.html"><h1>Кухня</h1></a>
+      <a class="text-decoration-none text-dark" href="menu.html"><h1 onmouseover="style.color='#73755d'" onmouseout="style.color='black'">Кухня</h1></a>
       <p>Концепция кухни: веганская - насыщенная, пряная - индийская кухня.Также есть европейская, локальная, и паназиатская кухни, street food зона.</span></p>
     </div>
   </div>
   <div class="col container-fluid">
     <div class="container-fluid collapse multi-collapse" id="collapse-1">
-      <a class="text-decoration-none text-dark" href="desserts.html"><h1>Десерты</h1></a>
+      <a class="text-decoration-none text-dark" href="desserts.html"><h1 onmouseover="style.color='#73755d'" onmouseout="style.color='black'">Десерты</h1></a>
       <p>Мы готовим большой выбор авторских лимонадов, делаем домашние напитки. А также в меню представлен легкий алкоголь: разливной сидр и алкогольные коктейли.</p>
     </div>
   </div>
   <div class="col container-fluid">
     <div class="container-fluid collapse multi-collapse" id="collapse-1">
-      <a class="text-decoration-none text-dark" href="beverages.html"><h1>Напитки</h1></a>
+      <a class="text-decoration-none text-dark" href="beverages.html"><h1 onmouseover="style.color='#73755d'" onmouseout="style.color='black'">Напитки</h1></a>
       <p>В меню имеются десерты и выпечка. Также предоставляем торты на заказ.</p>
     </div>
+  </div>
+</div>
+
+<br><br>
+
+<div id="flowers">
+  <div class="flowers1">
+  <img src="img/flower1.jpg" alt="">
+  </div>
+
+
+  <div class="text1">
+    <span>Цветочная лавка – здесь вы найдете редкий ассортимент живых цветов с интересной палитрой, композиции из сухоцветов по доступной цене. Цветы, как для любимых, так и для души...
+    </span>
+    <p>
+      <a onclick="soundClick1();" href="https://www.instagram.com/koktemgulder/" class="btn btn-outline-success my-3">Заказать</a>
+    </p>
   </div>
 </div>
 
@@ -105,6 +126,7 @@
     +7 701 068 9993<br>
     +7 701 111 4966</p>
    </div>
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   </div>
 
   <div class="" id="footer">
@@ -120,21 +142,11 @@
     </footer>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    function slowScroll(id) {
-      $('html, body').animate({
-        scrollTop: $(id).offset().top
-      }, 500);
-    }
-    $(document).on("scroll", function () {
-      if($(window).scrollTop() != 0)
-      $("header").attr("class", "fixed");
-      else {
-      $("header").removeClass("fixed");
-      }
-    });
-  </script>
+
+
+
   <script src="css/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script/main.js" charset="utf-8"></script>
   </body>
   </html>
