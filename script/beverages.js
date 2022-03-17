@@ -22,6 +22,14 @@ $(document).mouseover(function () {
     }
 });
 
+$('#about').mouseover(function () { 
+    $('#about').css('transform', 'scale(1.02)');
+});
+
+$('#about').mouseout(function () { 
+    $('#about').css('transform', 'scale(1)');
+});
+
 $('#waltzToggler').click(function () { 
     music1Toggler();
 });
