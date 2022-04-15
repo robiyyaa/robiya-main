@@ -207,6 +207,7 @@ h2 {
   text-align:center
 }
 body {
+  font-family: Arial;
   margin: 0;
 }
 
@@ -216,104 +217,15 @@ img {
   vertical-align: middle;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-#delivery p {font-size: 1.5em; color: #73755d}
-#form_input {
-  margin-top: 15px;
-  width: 35%;
-  margin-left: 38%;
-  font-size: 1.1em;
-}
-
-/* Обнуление */
-*,
-*::before,
-*::after {
-  padding: 0;
-  border: 0;
-}
-
 html,
 body {
   height: 100%;
@@ -332,7 +244,7 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-/*header*/
+
 .full-screen {
   position: relative;
   min-height: 100vh;
@@ -342,7 +254,7 @@ h2 {
 .content {
   position: relative;
   z-index: 5;
-  /* background-color: white; */
+
   background-color: var(--bg-color-2);
 }
 .full-screen__body {
@@ -442,100 +354,8 @@ h2 {
    line-height: 28px;
    transition: .3s ease-in;
 }
-* {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 .product-item:hover .button {
    background: #fc5a5a;
 }
@@ -646,6 +466,7 @@ h2 {
    background: #fc5a5a;
 }
 .row { margin-bottom: 20px;}
+
 .product-item3 {
    width: 300px;
    text-align: center;
@@ -826,20 +647,18 @@ display: block;
 		border-bottom: dashed 1px;
 		color: #8c0000;
 	}
-  #tooltip {
-  z-index: 9999;
-  position: absolute;
-  display: none;
-  top:0px;
-  left:0px;
-  width: 250px;
-  background-color: #fff;
-  padding: 5px 10px 5px 10px;
-  color: #000;
-  border: 1px solid #888;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px #555;
-  box-sizing: ;
+
+#tooltip {
+    z-index: 9999;
+	position: absolute;
+	display: none;
+	top:0px;
+	left:0px;
+	background-color: #000;
+	padding: 5px 10px 5px 10px;
+	color: white;
+	opacity: 0.6;
+	border-radius: 5px;
 }
 .block {
     background: #fff;
@@ -848,5 +667,67 @@ display: block;
     background: #000;
 }
 
+.color-back {
+background-color: #c3d4b4;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #c3d4b4;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #c3d4b4;
+  padding: 10px;
+}
+.contact-color {
+  background-color: white;
+  width:1170px;
+}
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,300&family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Open+Sans:wght@400;700&display=swap');
