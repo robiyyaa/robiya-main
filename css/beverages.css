@@ -27,6 +27,16 @@
     border: 5px solid var(--bg-color-2);
     z-index: 10;
   }
+  .nav-box{
+    cursor: pointer;
+    position: fixed;
+    top: 215px;
+    left: -28px;
+    border-radius: 45px;
+    transform: rotate(90deg);
+    border: 5px solid var(--bg-color-2);
+    z-index: 10;
+  }
 
 .navbar-a {
 text-decoration: none;

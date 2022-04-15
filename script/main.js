@@ -18,42 +18,42 @@ function topFunction() {
 }
 
 // звук
-const music = new Audio('sounds/mouseclick.mp3')
+const mus = new Audio('sounds/mouseclick.mp3')
 function soundClick() {
-  $('#order1').click(function(){
-    music.play();
+  $('#overview').click(function(){
+    mus.play();
 
       });
 }
+
+const mus1 = new Audio('sounds/mouseclick.mp3')
+function soundClick1() {
+  $('#flowers').click(function(){
+    mus1.play();
+
+      });
+}
+
 
 // ---------------
 
 
 
 
-// // карусель
-// $(document).ready(function(){
-//   $('.slider').slick({
-//     arrows: true,
-//     dots: true
-//   });
-// });
-//
-// // ---------------
 
 
 
 
 
-  function slowScroll(id) {
-    $('html, body').animate({
-      scrollTop: $(id).offset().top
-    }, 3000);
-  }
-  $(document).on("scroll", function () {
-    if($(window).scrollTop() === 0)
-    $("header").removeClass("fixed");
-    else {
-      $("header").attr("class", "fixed");
-    }
-  });
+  // function slowScroll(id) {
+  //   $('html, body').animate({
+  //     scrollTop: $(id).offset().top
+  //   }, 3000);
+  // }
+  // $(document).on("scroll", function () {
+  //   if($(window).scrollTop() === 0)
+  //   $("header").removeClass("fixed");
+  //   else {
+  //     $("header").attr("class", "fixed");
+  //   }
+  // });
